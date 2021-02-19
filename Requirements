@@ -1,0 +1,10 @@
+LinkedIn profile
+LinkedIn developer account (linkedin.com/developers/)
+LinkedIn app with 'w_member_social' scope
+SQL database (this app is configured for MySQL)
+API keys from NewsAPI.org (will need to signup for an account)
+
+
+Python Packages:
+requests v2.24
+PyMySql v0.10.1

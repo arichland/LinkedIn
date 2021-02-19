@@ -1,0 +1,9 @@
+This app use newsapi.org to get news articles, save them to an SQL database, and share the articles on LinkedIn.
+
+For the app to work, you will need to signup as a LinkedIn developer and create an app with 'w_member_social' scope 
+and create a SQL database with at least the following fields: title, url, content, status, last_share
+
+Once the LinkedIn app and SQL db are setup, fill in the fields in pydict.py file.
+
+From LinkedIn, enter values into 'li_dict' in pydict.py.
+From SQL db, enter values into 'db_dict' in pydict.py.
