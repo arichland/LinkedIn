@@ -12,7 +12,7 @@ class CreateTable:
         self.host = self.dict('host')
         self.db = self.dict('db_linkedin')
 
-    def posts(self):
+    def tbl_posts(self):
         con = pymysql.connect(user=self.user, password=self.password, host=self.host, database=self.db)
         with con.cursor() as cur:
             query = """CREATE TABLE IF NOT EXISTS tbl_Posts(
@@ -78,8 +78,7 @@ def migrate():
             con1.commit()
         cur1.close()
 
-
-
-
 #ct = CreateTable()
+#ct.tbl_posts()
+
 migrate()

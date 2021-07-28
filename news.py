@@ -5,7 +5,7 @@ import pydict
 import urllib.request
 import json
 
-class Posts:
+class News:
     #Retrieve news articles
     def __init__(self):
         self.dict = pydict.sql.get
@@ -73,5 +73,5 @@ class Posts:
                     cur.execute(delete_qry, i)
             finally:
                 con.commit()
-p = Posts()
-p.articles()
+n = News()
+n.articles()
