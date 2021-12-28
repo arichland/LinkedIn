@@ -4,6 +4,3 @@ For the app to work, you will need to signup as a LinkedIn developer and create 
 and create a SQL database with at least the following fields: title, url, content, status, last_share
 
 Once the LinkedIn app and SQL db are setup, fill in the fields in pydict.py file.
-
-From LinkedIn, enter values into 'li_dict' in pydict.py.
-From SQL db, enter values into 'db_dict' in pydict.py.
