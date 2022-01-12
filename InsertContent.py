@@ -32,7 +32,6 @@ class InsertIntoSQL:
             'EventHubs',
             "Independent"
         ]
-
         try:
             with con.cursor() as cur:
                 qry1 = """CREATE TEMPORARY TABLE IF NOT EXISTS temp_posts SELECT * FROM tbl_Posts LIMIT 0;"""
@@ -66,7 +65,6 @@ class InsertIntoSQL:
                     cur.execute(qry3, i)
                 cur.execute(qry4)
                 cur.execute(qry5)
-
         finally:
             con.commit()
             cur.close()
